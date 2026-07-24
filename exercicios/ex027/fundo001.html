@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando imagens de fundo</title>
+    <style>
+
+        body {
+            background-image: url(imagens/pattern004.png);
+        }
+
+        div.quadrado {
+            margin: auto;
+            margin-bottom: 5px;
+            display: block;
+            border: 3px solid rgb(247, 244, 244);
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 99%;
+            height: 200px;
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+
+        div#q3 {
+            background-image: url(imagens/pattern002.png);
+        }
+
+        div#q4 {
+            background-image: linear-gradient(to right, red, white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#q4 > img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+        
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+    <div class="quadrado" id="q4">
+        <img src="imagens/escudointer.png" alt="Escudo do Sport Club Internacional" id="escudointer">
+    </div>
+</body>
+</html>
