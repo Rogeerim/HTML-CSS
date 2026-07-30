@@ -3,52 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas grandes</title>
+    <title>Pratica de tabelas grandes</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: lightgray;
+            border-radius: 10px 10px 0px 0px;
+            box-shadow: 0 0 5px 1px black;
+        }
+
         table {
-            width: 500px;
+            width: 400px;
+            height: 100px;
             border-collapse: collapse;
         }
-        
+
+        th {
+            background-color: gray;
+            color: white;
+        }
+
         td, th {
             border: 1px solid black;
-            padding: 10px;
+            padding: 5px;
         }
 
-        thead {
+        td#num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        tfoot tr td,th {
             background-color: gray;
             color: white;
-        }
-
-        tfoot {
-            background-color: gray;
-            color: white;
-        }
-
-        caption {
-            font-size: 1.5em;
-            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
-    <!--
-    Anatomia para tabelas grandes
-    Table
-        THEAD
-            tr,td,th
-        TBODY
-            tr,td,th
-        TFOOT
-            tr,td,th        
-    -->
     <table>
-        <caption>Populacao dos estados</caption>
+        <caption>Teste de tabela</caption>
         <thead>
             <tr>
                 <th>Estado</th>
@@ -57,21 +58,33 @@
         </thead>
         <tbody>
             <tr>
-                <td>Sao paulo</td>
-                <td>45 919 04</td>
+                <td>Rio Grande do Sul</td>
+                <td id="num">19 120 321</td>
             </tr>
             <tr>
-                <td>Rio grande do sul</td>
-                <td>11 154 09</td>
+                <td>Sao Paulo</td>
+                <td id="num">50 123 912</td>
             </tr>
             <tr>
-                <td>Santa catarina</td>
-                <td>23 320 123</td>
+                <td>Santa Catarina</td>
+                <td id="num">20 321 391</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td id="num">41 231 112</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td id="num">33 321 657</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td id="num">49 321 312</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th>Total de habitantes</th>
                 <td>0000</td>
             </tr>
         </tfoot>
