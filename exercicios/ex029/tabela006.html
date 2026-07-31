@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        col.cnome {
+            background-color: lightgray;
+        }
+
+        col.csexo {
+            background-color: aquamarine;
+        }
+
+        .lightgray {
+            background-color: lightgray;
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo" span="2">
+                <col class="cprof">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>Feminino</td>
+                <td>27</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>Lucas Oliveira</td>
+                <td>Masculino</td>
+                <td>31</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Carla Mendes</td>
+                <td>Feminino</td>
+                <td>24</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>João Henrique</td>
+                <td>Masculino</td>
+                <td>40</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr>
+                <td>Mariana Costa</td>
+                <td>Feminino</td>
+                <td>35</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Pedro Almeida</td>
+                <td>Masculino</td>
+                <td>29</td>
+                <td>Analista de Dados</td>
+            </tr>
+            <tr>
+                <td>Sofia Ribeiro</td>
+                <td>Feminino</td>
+                <td>22</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Gabriel Santos</td>
+                <td>Masculino</td>
+                <td>38</td>
+                <td>Arquiteto</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
