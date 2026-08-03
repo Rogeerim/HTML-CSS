@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Times</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        th#escudoheader {
+            padding: 2px;
+        }
+
+        th#escudoheader img {
+            margin: auto;
+        }
+
+        .escudogroup {
+            padding: 2px 2px;
+            height: 40px;
+        }
+
+        img.escudo {
+            display: block;
+            margin: auto;
+            justify-content: center;
+            width: 30px;
+        }
+
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="escudogroup">
+        </colgroup>
+        <thead>
+            <tr>
+                <th id="escudoheader">Escudo</th>
+                <th>Times</th>
+                <th>Torcedores</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Flamengo-RJ_(BRA).png"
+                        alt="Escudo do Flamengo"
+                        class="escudo"
+                    >
+                </td>
+                <td>Flamengo</td>
+                <td class="num">45.500.500</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img
+                        src="https://pt.wikipedia.org/wiki/Special:Redirect/file/Corinthians_simbolo.png"
+                        alt="Escudo do Corinthians"
+                        class="escudo"
+                    >
+                </td>
+                <td>Corinthians</td>
+                <td class="num">32.342.791</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img
+                        src="https://pt.wikipedia.org/wiki/Special:Redirect/file/São_Paulo_Futebol_Clube.png"
+                        alt="Escudo do São Paulo"
+                        class="escudo"
+                    >
+                </td>
+                <td>São Paulo</td>
+                <td class="num">11.002.902</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Palmeiras_logo.svg"
+                        alt="Escudo do Palmeiras"
+                        class="escudo"
+                    >
+                </td>
+                <td>Palmeiras</td>
+                <td class="num">9.042.131</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/SC_Internacional_Brazil_Logo.svg"
+                        alt="Escudo do Internacional"
+                        class="escudo"
+                    >
+                </td>
+                <td>Internacional</td>
+                <td class="num">7.423.129</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Gremio_logo.svg"
+                        alt="Escudo do Grêmio"
+                        class="escudo"
+                    >
+                </td>
+                <td>Grêmio</td>
+                <td class="num">8.923.331</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Botafogo_de_Futebol_e_Regatas_logo.svg"
+                        alt="Escudo do Botafogo"
+                        class="escudo"
+                    >
+                </td>
+                <td>Botafogo</td>
+                <td class="num">13.886.341</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img
+                        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Fluminense_FC_escudo.png"
+                        alt="Escudo do Fluminense"
+                        class="escudo"
+                    >
+                </td>
+                <td>Fluminense</td>
+                <td class="num">10.921.357</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total de Torcedores</th>
+                <td style="text-align: center; font-weight: bold;" colspan="1">139.042.482</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

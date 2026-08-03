@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --font1: "Open Sans", sans-serif;
+}
+body {
+    font-family: var(--font1);
+    background-color: rgb(17, 47, 73);
+    padding-top: 20vh;
+}
+
+div#container {
+    width: 650px;
+    margin: auto;
+    background-color: #365C7D;
+    color: white;
+    text-align: center;
+    height: 500px;
+    border-radius: 25px;
+    position: relative;
+    border: 3px solid lab(43.68% -3.52 -25.43);
+}
+
+div#topBar {
+    background-color: #6F92B0;
+    width: 100%;
+    height: 75px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 25px 25px 0px 0px;
+
+    position: absolute;
+    top: 0;
+}
+
+div#bottomBar {
+    background-color: #6F92B0;
+    width: 100%;
+    height: 75px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px 0px 25px 25px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+div#loginUsuario{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
