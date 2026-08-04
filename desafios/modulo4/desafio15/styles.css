@@ -4,27 +4,68 @@
     margin: 0px;
     padding: 0px;
 }
+
 body {
     background-image: url(images/fundo-madeira.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-
-div#celular {
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
+    height: 100vh;
 }
 
-div iframe#tela {
+#celular {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 265px;
-    height: 50%;
+}
 
+#tela {
+    position: absolute;
+    top: 79px;
+    left: 21px;
+    width: 270px;
+    height: 475px;
+    border: none;
+}
+
+a#botaoHome {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    left: 50%;
+    top: 93%;
+    transform: translate(-50%, -50%);
+}
+
+#botoesSociais {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+section#redesSociais div a {
+    text-decoration: none;
+    text-align: right;
+    display: block;
+}
+
+section#redesSociais div a img {
+    width: 70px;
+    margin: 5px;
+    border-radius: 100%;
+
+    transition: transform 0.25s ease;
+}
+
+section#redesSociais div a img:hover {
+    transform: scale(1.2);
+}
+
+section#redesSociais div a img:active {
+    transform: scale(0.95);
 }
