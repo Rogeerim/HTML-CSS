@@ -27,7 +27,9 @@ iframe#tela {
     left: 21px;
     width: 270px;
     height: 475px;
+    
     border: none;
+    border-radius: 5px;
 }
 
 a#botaoHome {
