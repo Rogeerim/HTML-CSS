@@ -9,11 +9,21 @@
 <body>
     <div id="container">
         <div id="topBar">
-            <h1>LOGIN</h1>
+            <h1>Login</h1>
         </div>
 
         <div id="loginUsuario">
-            <h2>Digite seu nome</h2>
+            <form action="" method="post" autocomplete="on">
+                <label for="iUsuario" class="loginLabel">
+                    <p>Usuário</p>
+                    <input type="text" name="usuario" id="iUsuario" placeholder="Ex. johnburguer123">
+                </label>
+
+                <label for="iSenha" class="loginLabel">
+                    <p>Senha</p>
+                    <input type="password" name="senha" id="iSenha" placeholder="Sua Senha">
+                </label>
+            </form>
         </div>
 
         <div id="bottomBar">

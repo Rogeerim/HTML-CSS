@@ -7,48 +7,90 @@
 }
 body {
     font-family: var(--font1);
-    background-color: rgb(17, 47, 73);
+    background-color: #0000F2;
     padding-top: 20vh;
 }
 
 div#container {
     width: 650px;
     margin: auto;
-    background-color: #365C7D;
+    background-color: #eee;
     color: white;
     text-align: center;
     height: 500px;
-    border-radius: 25px;
+    border-radius: 10px;
     position: relative;
-    border: 3px solid lab(43.68% -3.52 -25.43);
+    
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
 }
 
 div#topBar {
-    background-color: #6F92B0;
+    background-color: #ffffff;
     width: 100%;
     height: 75px;
     padding: 0px;
     margin: 0px;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 
-    position: absolute;
-    top: 0;
+    top: 0px;
+}
+
+div#topBar h1 {
+    padding-top: 15px;
+    color: #0000F2;
 }
 
 div#bottomBar {
-    background-color: #6F92B0;
+    background-color: #ffffff;
     width: 100%;
     height: 75px;
     padding: 0px;
     margin: 0px;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 10px 10px;
 
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
 }
 
 div#loginUsuario{
-    position: absolute;
     width: 100%;
     text-align: center;
+}
+
+div#loginUsuario h2 {
+    display: block;
+    font-size: 4em;
+}
+
+label.loginLabel input {
+    border: 2px solid #bbb;
+    border-radius: 5px;
+    display: block;
+    outline: none;
+    margin: auto;
+
+    width: 450px;
+    height: 35px;
+
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+label.loginLabel input:focus {
+    border-color: #0000F2;
+    box-shadow: 0 0 0 1px #0000F2; 
+    
+    transform: scale(1.005);
+}
+
+label.loginLabel p {
+    color: #0000F2;
+    text-align: left;
+    font-weight: 600;
+    margin: auto;
+
+    width: 450px;
+    height: 15px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
