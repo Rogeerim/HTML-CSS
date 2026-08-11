@@ -9,10 +9,13 @@ body {
     font-family: var(--font1);
     background-color: #0000F2;
     padding-top: 20vh;
+
+    background-image: url(images/skyblue.jpg);
+    background-size: cover;
 }
 
 div#container {
-    width: 650px;
+    width: 550px;
     margin: auto;
     background-color: #eee;
     color: white;
@@ -21,7 +24,10 @@ div#container {
     border-radius: 10px;
     position: relative;
     
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    outline: 2px solid #eee;
+    outline-offset: 4px;
 }
 
 div#topBar {
@@ -68,6 +74,7 @@ label.loginLabel input {
     display: block;
     outline: none;
     margin: auto;
+    padding-left: 10px;
 
     width: 450px;
     height: 35px;
@@ -88,9 +95,65 @@ label.loginLabel p {
     font-weight: 600;
     margin: auto;
 
-    width: 450px;
+    width: 465px;
     height: 15px;
 
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+label input#submit {
+    width: 300px;
+    height: 40px;
+
+    display: block;
+    margin: auto;
+    margin-top: 75px;
+
+    color: #eee;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 1em;
+
+    border-radius: 25px;
+    background-color: #0000F2;
+    outline: 3px solid #0000F2;
+    outline-offset: 3px;
+    border: none
+}
+
+a#forgotpassword {
+    display: block;
+    padding-top: 15px;
+
+    font-size: 0.9em;
+    color: #999;
+    text-decoration: none;
+    font-family: "Open Sans";
+}
+
+a#forgotpassword:hover {
+    color: #777;
+    text-decoration: underline;
+
+    font-family: "Open Sans";
+}
+
+div#botoesSociais {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 55.5%;
+}
+
+a.botaoSocial {
+    padding: 3px;
+}
+
+a.botaoSocial img {
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    
+    border: 2px solid #bbb;
 }
