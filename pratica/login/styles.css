@@ -130,7 +130,7 @@ label input#submit:hover {
 
 a#forgotpassword {
     display: block;
-    padding-top: 15px;
+    padding-top: 10px;
 
     font-size: 0.9em;
     color: #999;
