@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --font1: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: var(--font1);
+    background-color: #0000F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+
+    background-image: url(images/skyblue.jpg);
+    background-size: cover;
+}
+
+div#container {
+    width: 550px;
+    background-color: #eeeeee8e;
+    color: white;
+    text-align: center;
+    height: 300px;
+    border-radius: 10px;
+    
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    outline: 2px solid #eee;
+    outline-offset: 4px;
+}
