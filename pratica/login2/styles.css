@@ -13,21 +13,80 @@ body {
     align-items: center;
     justify-content: center;
     height: 98vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
 
-    background-image: url(images/skyblue.jpg);
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/purplebg.png);
     background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -1;
+    transform: scale(1.1);
 }
 
 div#container {
-    width: 550px;
-    background-color: #eeeeee8e;
-    color: white;
-    text-align: center;
+    width: 450px;
+    background-color: #7b4d9265;
     height: 300px;
-    border-radius: 10px;
     
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
 
-    outline: 2px solid #eee;
-    outline-offset: 4px;
+#imagemUsuario {
+    margin: auto;
+    position: absolute;
+
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.651);
+    background-image: url(images/user.png);
+
+    background-size: 65px; 
+    background-repeat: no-repeat;
+    
+    background-position: center; 
+    
+    width: 120px;
+    height: 120px;
+    
+    border-radius: 50%; 
+}
+
+div#textFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+label img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+input {
+    background-color: #eee;
+    display: block;
+    margin-top: 10px;
+    width: 340px;
+    height: 35px;
+    padding: 5px;
+
+    font-family: "Open Sans";
+    font-size: 1em;
+
+    outline: none;
+    border: none;
 }
