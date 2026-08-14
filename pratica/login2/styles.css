@@ -33,7 +33,7 @@ body::before {
     transform: scale(1.1);
 }
 
-div#container {
+main {
     width: 450px;
     background-color: #7b4d9265;
     height: 300px;
@@ -70,19 +70,38 @@ div#textFields {
     margin-top: 75px;
 }
 
+div.customField {
+    display: flex;
+    background-color: white;
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
 label img {
-    position: absolute;
     width: 30px;
     height: 30px;
+    filter: invert(100%);
+    filter: opacity(45%)
+}
+
+label div.iconBox {
+    display: flex;
+    background-color: #ccc;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 input {
     background-color: #eee;
-    display: block;
-    margin-top: 10px;
-    width: 340px;
-    height: 35px;
-    padding: 5px;
+    margin-top: 0px;
+    width: 265px;
+    height: 50px;
+    padding-left: 10px;
 
     font-family: "Open Sans";
     font-size: 1em;
