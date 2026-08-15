@@ -109,3 +109,15 @@ input {
     outline: none;
     border: none;
 }
+
+input[type="submit"] {
+    width: 320px;
+    height: 60px;
+    margin-top: 10px;
+
+    font-family: "Open Sans";
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.616);
+    font-weight: bold;
+}
