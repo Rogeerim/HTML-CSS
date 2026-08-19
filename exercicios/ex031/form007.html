@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formnulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+
+                <optgroup label="Estados">
+                    <option value="RS">Rio GRANDE DO SUL</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="iprof">Profissao:</label>
+                <input type="text" name="prof" id="iprof" list="listaprof">
+                <datalist id="listaprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+            </p>
+
+            <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" rows="10" cols="30" resize="none" placeholder="Bom dia gurizes"></textarea>
+        </p>
+        </p>
+    </form>
+</body>
+</html>
