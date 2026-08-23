@@ -6,6 +6,11 @@
     --font1: "Open Sans", sans-serif;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     font-family: var(--font1);
     background-color: #0000F2;
@@ -140,10 +145,11 @@ div#rememberField input {
     margin: 0;
     width: 15px;
     height: 15px; 
+    accent-color: #535369;
 }
 
 label#checkBox p {
-    color: white;
+    color: rgba(255, 255, 255, 0.534);
     margin: 0;
     font-size: 15px;
     padding-left: 5px;
