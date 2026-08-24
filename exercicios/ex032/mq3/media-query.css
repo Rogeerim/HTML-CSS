@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@media print {
+    img#phone {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    img#print {display: block;}
+    img#tablet {display: none;}
+}
