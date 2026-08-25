@@ -12,6 +12,8 @@ html {
 body {
     margin: 0px;
     padding: 0px;
+
+    background-color: rgb(243, 243, 243);
 }
 
 header {
@@ -26,6 +28,24 @@ header h1 {
     text-align: center;
 }
 
+button#menuButton {
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 40px;
+    border: none;
+    
+    background-color: rgb(133, 130, 130);
+    background-image: url(images/menu-hamburguer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button#menuButton:hover {
+    background-color: rgb(173, 171, 171);
+}
+
 nav {
     width: 100%;
 }
@@ -36,6 +56,8 @@ nav ul {
     list-style: none;
     justify-content: center;
     padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 nav li {
@@ -58,5 +80,14 @@ nav li a {
 
 nav li:hover {
     background-color: rgb(173, 171, 171);
-    
+}
+
+main {
+    width: 900px;
+    margin: auto;
+    padding: 15px;
+
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.459);
+    background-color: white;
 }
