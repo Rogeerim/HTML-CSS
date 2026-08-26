@@ -2,7 +2,7 @@
 
 /* Media Queries */
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     main {
         width: 80%;
     }
@@ -40,13 +40,103 @@
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) {
+    main {
+        width: 80%;
+    }
+
+    header nav#normalMenu {
+        display: none;
+    }
+
+    header nav#burguerMenu {
+        display: block;
+    }
+
+    #menuButton.ativo > span {
+        transform: rotate(90deg);
+    }
+    
+    #menuButton.ativo ~ nav#burguerMenu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li {
+            width: 250px;
+            margin-left: 0px;
+        }
+    }
+
+    nav#burguerMenu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        li {
+            width: 250px;
+            margin-left: 0px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
     main {
         width: 80%;
     }
 
     header nav#normalMenu {
         display: block;
+    }
+
+    button#menuButton {
+        display: none;
+    }
+
+    header nav#burguerMenu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        width: 80%;
+    }
+
+    header nav#normalMenu {
+        display: block;
+    }
+
+    button#menuButton {
+        display: none;
+    }
+
+    header nav#burguerMenu {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        width: 900px;
+    }
+
+    header nav#normalMenu {
+        display: block;
+    }
+
+    button#menuButton {
+        display: none;
+    }
+
+    header nav#burguerMenu {
+        display: none;
+    }
+}
+
+/* Media Query para impressao */
+
+@media only print {
+    header nav#normalMenu {
+        display: none;
     }
 
     button#menuButton {
