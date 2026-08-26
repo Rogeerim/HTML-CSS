@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" media="all">
     <link rel="stylesheet" href="media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Menu com Media Queries</title>
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <button id="menuButton"></button>
+        <button id="menuButton" onclick="openMenu()"><span class="material-symbols-outlined">menu</span></button>
         <nav id="burguerMenu">
             <ul style="list-style: none;">
                 <li><a href="#">Opcao 1</a></li>
@@ -36,5 +37,13 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam facilis possimus sapiente reiciendis veniam sint cumque labore reprehenderit in repellendus quisquam commodi atque perferendis incidunt enim voluptate ipsam, cum dolore.</p> <br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate amet quam aspernatur assumenda perspiciatis iste aperiam eum, est fugiat numquam incidunt quis, iure impedit cum quaerat, expedita libero obcaecati iusto.</p>
     </main>
+
+    <script>
+        function openMenu() {
+            const botao = document.querySelector("#menuButton")
+
+            botao.classList.toggle("ativo")
+        }
+    </script>
 </body>
 </html>
