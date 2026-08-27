@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/media-query.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Tela de Login Responsiva</title>
+</head>
+<body>
+    <main>
+        <div class="cardContainer">
+            <section class="bannerLateral">
+                <h1>Bem vindo de volta.</h1>
+                <p>Acesse sua conta agora.</p>
+            </section>
+
+            <form id="loginForm" action="login.js" method="post" autocomplete="on">
+                <header id="loginHeader">
+                    <h1>Login to your account.</h1>
+                </header>
+                <div class="campoTexto">
+                    <label for="iEmail">
+                        <div class="inputField">
+                            <span class="material-symbols-outlined">alternate_email</span>
+                            <input type="email" name="Email" id="iEmail" autocomplete="email" placeholder="Seu e-mail aqui" minlength="10" maxlength="100">
+                        </div>
+                    </label>
+                </div>
+
+                <div class="campoTexto">
+                    <label for="iSenha">
+                        <div class="inputField">
+                            <span class="material-symbols-outlined">key</span>
+                            <input type="password" name="Senha" id="iSenha" autocomplete="new-password" placeholder="Sua senha aqui" minlength="8" maxlength="30">
+                        </div>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
