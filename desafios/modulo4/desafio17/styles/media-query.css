@@ -3,6 +3,9 @@
 /* Media Queries (Mudando toda a estrutura do site para melhor responsividade em dispositivos diferentes. */
 
 @media only screen and (max-width: 600px) {
+    body {
+        background-color: aqua;
+    }
     div.cardContainer {
         width: 350px;
         height: 450px;
@@ -53,6 +56,9 @@
 }
 
 @media only screen and (min-width: 600px) {
+    body {
+        background-color: purple;
+    }    
     div.cardContainer {
         width: 350px;
         height: 450px;
@@ -61,7 +67,7 @@
     }
 
     section.bannerLateral {
-        width: 400px;
+        width: 100%;
         height: 20%;
 
         border-radius: 15px 15px 0px 0px;
@@ -78,7 +84,7 @@
     }
 
     form#loginForm {
-        width: 400px;
+        width: 100%;
         height: 80%;
 
         header h1 {
