@@ -6,6 +6,7 @@
     div.cardContainer {
         width: 400px;
         flex-direction: column;
+        justify-content: center;
     }
 
     section.bannerLateral {
@@ -29,9 +30,54 @@
         width: 400px;
         height: 80%;
 
-        header {
-            
+        header h1 {
+            font-size: 1.5em;
         }
+    }
+
+    div.campoTexto {
+        width: 75%;
+        height: 60px;
+
+        transform: translateY(0px);
+    }
+
+    div.campoTexto input {
+        width: 75%;
+    }
+
+    input#loginBtn {
+        transform: translateY(20px)
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    div.cardContainer {
+        width: 400px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section.bannerLateral {
+        width: 400px;
+        height: 20%;
+
+        border-radius: 15px 15px 0px 0px;
+
+        h1 {
+            font-size: 1.5em;
+            height: 100%;
+            width: 100%;
+            padding-top: 30px;
+        }
+        p {
+            display: none;
+        }
+    }
+
+    form#loginForm {
+        width: 400px;
+        height: 80%;
 
         header h1 {
             font-size: 1.5em;
@@ -42,21 +88,15 @@
         width: 75%;
         height: 60px;
 
-        transform: translateY(-25px);
+        transform: translateY(0px);
     }
 
     div.campoTexto input {
         width: 75%;
     }
-}
 
-@media only screen and (min-width: 600px) {
-    div.cardContainer {
-        width: 400px;
-    }
-
-    form {
-        width: 0px;
+    input#loginBtn {
+        transform: translateY(20px)
     }
 }
 
