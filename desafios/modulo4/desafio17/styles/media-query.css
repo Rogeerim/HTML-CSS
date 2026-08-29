@@ -5,15 +5,48 @@
 @media only screen and (max-width: 600px) {
     div.cardContainer {
         width: 400px;
+        flex-direction: column;
     }
 
-    form {
-        width: 100%;
+    section.bannerLateral {
+        width: 400px;
+        height: 20%;
+
+        border-radius: 15px 15px 0px 0px;
+
+        h1 {
+            font-size: 1.5em;
+            height: 100%;
+            width: 100%;
+            padding-top: 30px;
+        }
+        p {
+            display: none;
+        }
+    }
+
+    form#loginForm {
+        width: 400px;
+        height: 80%;
+
+        header {
+            
+        }
+
+        header h1 {
+            font-size: 1.5em;
+        }
     }
 
     div.campoTexto {
         width: 75%;
         height: 60px;
+
+        transform: translateY(-25px);
+    }
+
+    div.campoTexto input {
+        width: 75%;
     }
 }
 
