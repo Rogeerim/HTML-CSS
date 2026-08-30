@@ -3,11 +3,12 @@
 * {
     margin: 0px;
     padding: 0px;
+    transition: width 0.5s ease, background-color 0.5s ease, padding 0.5s ease;
 }
 
 html {
     width: 100%;
-    height: 100%;
+    min-height: 100dvh;
 }
 
 body {
@@ -130,6 +131,7 @@ div.inputField input {
 
 div.inputField input:focus {
     outline: 1.5px solid #9a4adb;
+    border-color: #9a4adb;
 }
 
 input#loginBtn {
@@ -139,12 +141,29 @@ input#loginBtn {
     border-radius: 20px;
     margin-top: 10px;
     border: none;
+    transform: translateY(20px);
 
     font-size: 1em;
     font-weight: bold;
     color: white;
     background-image: linear-gradient(-240deg, #8B5DE8, #BB99FF);
     transition: border 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+a#forgotPassword {
+    display: none;
+    transform: translateY(15px);
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #999;
+}
+
+a#forgotPassword:hover {
+    text-decoration: underline;
+}
+
+a#forgotPassword:visited {
+
 }
 
 input#loginBtn:hover {

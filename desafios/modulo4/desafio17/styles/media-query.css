@@ -9,6 +9,7 @@
     div.cardContainer {
         width: 650px; 
     }
+
 }
 
 /* 2. Tablets em Paisagem / Telas Pequenas (Menores que 992px) */
@@ -16,9 +17,21 @@
     body {
         background-color: rgb(0, 128, 58);
     }    
+
     div.cardContainer {
         width: 550px;
     }
+
+    div.campoTexto {
+        width: 75%;
+        height: 60px;
+        transform: translateY(0px);
+    }
+
+    div.campoTexto input {
+        width: 75%;
+    }
+
 }
 
 /* 3. Tablets em Pé (Menores que 768px) */
@@ -65,11 +78,11 @@
     }
 
     div.campoTexto input {
-        width: 80%;
+        width: 83%;
     }
 
     input#loginBtn {
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
 }
 
