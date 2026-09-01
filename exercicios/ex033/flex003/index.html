@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Wrap</title>
+    <style>
+        div.container {
+            display: flex;
+            /* Wrap 
+               Wrap-reverse
+               nowrap (padrao)
+            */
+            flex-wrap: wrap;
+            /* flex-direction
+                Row (Esquerda > Direita)
+                Row-reverse (Direita > Esquerda)
+                Column (Cima > Baixo)
+                Column-reverse (Baixo > Cima)
+            */
+            flex-direction: row;
+
+            /* Shorthand (Flex-direction + Flex-wrap) */
+            flex-flow: row wrap;
+            background-color: lightskyblue;
+        }
+
+        div.item {
+            flex: auto;
+            margin-left: 5px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+    </div>
+</body>
+</html>
