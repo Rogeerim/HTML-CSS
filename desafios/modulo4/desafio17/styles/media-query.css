@@ -87,7 +87,7 @@
 }
 
 /* 4. Celulares (Menores que 600px) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
     body {
         background-color: aqua;
     }
