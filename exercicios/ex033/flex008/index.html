@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Flexbox</title>
+    <style>
+        div.container {
+            display: flex;
+            height: 300px;
+            flex-flow: row nowrap;
+            background-color: lightskyblue;
+        }
+
+        div.item {
+            flex-basis: 150px;
+            /* 0 = Desliga o Encolhimento 1 = Liga o Encolhimento (Junto com o container pai) */
+            flex-shrink: 1; 
+            /* 0 = Desliga o Crescimento 1 = Liga o Crescimento (Junto com o container pai) */            
+            flex-grow: 1;
+            margin: 1px;
+            text-align: center;
+            border:1px solid black
+        }
+
+        div.item#cresce {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="cresce" class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+</body>
+</html>
