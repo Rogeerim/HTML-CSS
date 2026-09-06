@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* 3. Tablets em Pé (Menores que 768px) */
+@media only screen and (max-width: 1020px) {
+    header.flexHeader {
+        flex-flow: column nowrap;
+    }
+
+    ul {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    header h1 {
+        text-align: center;
+    }
+    ul {
+        flex-flow: row wrap;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
+
+    li.optionButton {
+        margin: 5px 0px 5px 0px;
+        width: 90%;
+    }
+}
+
+/* Impressão */
+@media only print {
+} 
